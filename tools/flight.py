@@ -1,5 +1,7 @@
 class SearchFlightTool:
-    def run(origin:str, destination:str, depart:date, class_type:str)->List[FlightOption]:
+    def run(
+        origin: str, destination: str, depart: date, class_type: str
+    ) -> List[FlightOption]:
         """
         Searches for flights based on the provided parameters.
 
@@ -14,8 +16,11 @@ class SearchFlightTool:
         """
         pass
 
+
 class BookFlightTool:
-    def run(flight_if:str, passenger_info:dict, payment_token:str) -> BookingConfirmation:
+    def run(
+        flight_if: str, passenger_info: dict, payment_token: str
+    ) -> BookingConfirmation:
         """
         Books a flight with the provided flight ID and passenger information.
 

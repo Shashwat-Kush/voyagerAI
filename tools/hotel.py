@@ -2,7 +2,9 @@ from datetime import date
 
 
 class SearchHotelTool:
-    def run(location:str, check_in: date, check_out: date,max_price:int ) -> List[HotelOption]:
+    def run(
+        location: str, check_in: date, check_out: date, max_price: int
+    ) -> List[HotelOption]:
         """
         Searches for hotels based on the provided parameters.
 
@@ -17,8 +19,9 @@ class SearchHotelTool:
         """
         pass
 
+
 class BookHotelTool:
-    def run(hotel_id:str, guest_info:dict, payment_token:str) -> BookingConfirmation:
+    def run(hotel_id: str, guest_info: dict, payment_token: str) -> BookingConfirmation:
         """
         Books a hotel with the provided hotel ID and guest information.
 
@@ -31,4 +34,3 @@ class BookHotelTool:
             BookingConfirmation: Confirmation details of the booked hotel.
         """
         pass
-
